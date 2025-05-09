@@ -790,6 +790,9 @@ with tab2:
                 'MaturityAmount': 'Maturity Amount',
                 'MaturityDate': 'Maturity Date'
             }, inplace=True)
+
+            # Ensure FD Number is treated as string to avoid Arrow serialization warnings
+            display_df['FD Number'] = display_df['FD Number'].astype(str)
             
             # Reorder columns - keep Row ID first, then Bank, FD Number
             cols = display_df.columns.tolist()
