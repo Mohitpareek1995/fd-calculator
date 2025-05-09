@@ -132,10 +132,10 @@ def check_password():
     
     # Create login form
     st.markdown("<p class='login-input-label'>Username</p>", unsafe_allow_html=True)
-    username = st.text_input("", key="username_input", label_visibility="collapsed")
+    username = st.text_input("Username", key="username_input", label_visibility="collapsed")
     
     st.markdown("<p class='login-input-label'>Password</p>", unsafe_allow_html=True)
-    password = st.text_input("", type="password", key="password_input", label_visibility="collapsed")
+    password = st.text_input("Password", type="password", key="password_input", label_visibility="collapsed")
     
     if st.button("Login"):
         st.session_state["last_attempt_time"] = time.time()
