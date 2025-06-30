@@ -14,7 +14,7 @@ import time
 # Page config for better display on all devices
 st.set_page_config(
     page_title="Fixed Deposit Repository",
-    layout="wide",
+    layout="centered",  # changed from "wide" to "centered"
     initial_sidebar_state="collapsed"
 )
 
